@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water</title>
+    <style>
+        .water{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            position: relative;
+            left: 40%;
+            top: 50%;
+            margin-top: 15%;
+            transition: box-shadow 0.5s;
+        }
+        .drop{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: #54ABFB;
+            border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+            opacity: 1;
+        }
+        .drop::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #318CFE;
+            border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+            box-shadow: -20px 30px 60px #1B6cFB, -40px 60px 32px #1b6cfb, inset -6px 6px 10px #1B6CFB, inset 2px 6px 10px #1a74e5
+            , inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+                         /* shadow below             is also the same as before*/
+        }
+        .drop::after{
+            margin-top: 15px;
+            content:"";
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background: #E6FDFB;
+            border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+            left: 130px;
+            height: 50px;
+            box-shadow: 16px 40px 0 -10px white;
+            opacity: 0.8;
+        }
+        .drop:hover::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #318CFE;
+            border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+            box-shadow: -20px 30px 60px #d2e1fa, -40px 60px 32px #c5cfe1, inset -6px 6px 10px white, inset 2px 6px 10px #1a74e5
+            , inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+        }
+    </style>
+</head>
+<body>
+    <div class="water">
+        <div class="drop">
+        <div class="before">
+            <div class="after">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

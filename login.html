@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .wrapper{
+            position: relative;
+            align-items: center;
+            text-align: center;
+        }
+        .login{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            border: 6px solid white;
+            width: 260px;
+            height: 400px;
+            margin-top: 100px;
+            border-radius: 0px 100px;
+            background-color: rgb(243, 240, 240);
+            padding-left: 10px;
+            box-shadow: 5px 5px 5px 5px gray, inset 5px 5px 5px 5px gray ;
+        
+            
+            /* border: 1px solid black;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 250px;
+            height: 400px;
+            border-radius: 0px 100px */
+        }
+        .box{
+            padding-right: 10px;
+        }
+        #demo{
+            box-shadow: 0px 5px 0px 0px rgb(230, 219, 219), inset 0px 5px 0px 0px rgb(238, 230, 230);
+            border-radius: 32px;
+            width: 70%;
+            height: 20%;
+        }
+        .bigbox{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            transition: box-shadow .5s;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            padding-top: 8px;
+            padding-left: 10px;
+            box-shadow: 0px 0px 5px 2px rgb(194, 192, 192), inset 0px 0px 5px 2px rgb(194, 192, 192);
+        }
+        .box:hover{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            box-shadow:0px 0px 5px 2px rgb(248, 245, 245 );;
+        }
+        .input{
+            width: 70%;
+            border-radius: 0px 32px;
+            box-shadow: 0px 5px 0px 1px rgb(213, 209, 209), inset 0px 5px 0px 1px rgb(199, 188, 188);
+        }
+        .text{
+            
+            transition: tranform 0.5s;
+        }
+        .bigbox:hover .text{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div class="inputName">
+                <input type="text" placeholder="UserName" id="demo">
+            </div>   <br>
+            <div class="inputPassword">
+                <input type="text" placeholder="Password" id="demo">
+            </div>
+            <div> <br>
+                <span><input type="checkbox" ></span>
+                <span> <b>Remember Me</b> </span>
+            </div>
+            <div> <br>
+                <button type="submit" class="input">login</button>
+            </div> <br>
+            <div class="bigbox">
+                <div class="box"><img src="./Image/1.png" alt="Gmail" width="20px" height="20px" class="text"></div>
+                <div class="box"><img src="./Image/2.png" alt="Facebook" width="20px" height="20px"></div>
+                <div class="box"><img src="./Image/3.jpg" alt="Instagram" width="20px" height="20px"></div>
+                <div class="box"><img src="./Image/4.jpg" alt="Twitter" width="20px" height="20px"></div>
+                <div class="box"><img src="./Image/5.png" alt="Yahoo" width="20px" height="20px"></div>
+                
+            </div> <br>
+            <div>
+                <b> <u>Forget Password?</u> / Dark Mode</b>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
